@@ -2,8 +2,9 @@
   "name": "vids",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "nodemon --exec babel-node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,18 @@
   "bugs": {
     "url": "https://github.com/sheminusminus/vids/issues"
   },
-  "homepage": "https://github.com/sheminusminus/vids#readme"
+  "homepage": "https://github.com/sheminusminus/vids#readme",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "fs-extra": "^8.1.0",
+    "gui": "^0.6.3",
+    "nodegit": "^0.25.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "nodemon": "^1.19.2"
+  }
 }
